@@ -26,6 +26,7 @@ public class Steps {
 	@When("User opens URL {string}")
 	public void user_opens_URL(String url) {
 		driver.get(url);
+		driver.manage().window().maximize();
 	}
 
 	@When("User enters Email as {string} and Password as {string}")
